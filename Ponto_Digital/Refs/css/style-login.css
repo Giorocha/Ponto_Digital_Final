@@ -1,0 +1,52 @@
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: white;
+    
+}
+.nav-bar {
+    width: 100%;
+}
+
+.nav-menu {
+    display: none;
+  }
+  nav.nav-bar ul {
+    list-style-type: none;
+  }
+  .nav-list {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    background-color: #000;
+    justify-content: space-between;
+
+  }
+  .nav-list li a {
+    display: block;
+    color: #fff;
+    padding: 20px 20px;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+  }
+  form{
+      padding: 200px;
+      background-color: rgba(102, 102, 102, 0.438);;
+      text-align: center;
+      
+  }
+  input{
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      height: 50px;
+      widows: 30px;
+
+  }
+  label{
+      color: white;
+  }

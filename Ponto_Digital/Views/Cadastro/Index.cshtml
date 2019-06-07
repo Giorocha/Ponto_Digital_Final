@@ -1,0 +1,29 @@
+@{
+    Layout = "_Layout";
+}
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style-login.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <Header>
+        @{
+        Html.RenderPartial("_HeaderNavBar");
+    }
+        <section class="container">
+            <h2>Cadastro</h2>
+                <form class="lala" action="Cadastro/CadastrarUsuario" method="POST">
+               <input type="text" name="nome" placeholder="Nome completo" id="nome" required>
+               <input type="text" name="email" placeholder="E-mail" id="email" required>
+               <input type="password" name="senha" id="senha" placeholder="Senha" required>
+               <input type="date" name="data-nascimento" placeholder="data" id="data" required>
+
+               <input type="submit" value="Confirmar" id="botao">
+           </form>
+        </section>
+    </Header>
+   
+</body>
