@@ -28,6 +28,8 @@ namespace Ponto_Digital.Controllers
 
             usuarioRepositorio.Inserir(usuario);
 
+            ViewBag.Mensagem = "Cadastrado";
+
             ViewData["Action"] = "Cadastro";
             return RedirectToAction("Index", "Home");
         }

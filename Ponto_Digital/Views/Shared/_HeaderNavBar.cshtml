@@ -1,3 +1,6 @@
+@{
+    var user = (string)ViewData["User"];
+}
 <nav class="nav-bar">
      <div class="nav-container">
          <ul class="nav-list " id="nav">
@@ -6,7 +9,12 @@
              <li><a href='@Url.Action("Index","Home")#localizaçao'>Localização</a></li>
              <li><a href='@Url.Action("Index","Home")#pedidos'> Pedidos</a></li>
              <li><a href='@Url.Action("Index","Home")#sac/blog'> Depoimentos</a></li>
-             <li><a href='@Url.Action("Login","Cliente")'> Login</a></li>
+             @if(string.IsNullOrEmpty(user))
+             {
+                 <li><a id="bt_login" asp-controller="Cliente" asp-action="Login">Login</a></li>
+             }else{
+                 <li><a id="bt_logout" asp-controller="Cliente" asp-action="Logout">Logout</a></li>
+             }
              <li><a href='@Url.Action("Index","Cadastro")'>Cadastro</a></li>
         </ul>
     </div>
