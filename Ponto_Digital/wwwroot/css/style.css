@@ -352,8 +352,10 @@ box-sizing: border-box;
 
 textarea {
 vertical-align: top;
-height: 7em;
+
+width: 10%;
 resize: vertical;
+
 }
 .button {
 padding-left: 270px; 

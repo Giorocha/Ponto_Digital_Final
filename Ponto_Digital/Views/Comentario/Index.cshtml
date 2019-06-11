@@ -1,0 +1,27 @@
+@{
+    Layout = "_Layout";
+}
+<head>
+    <meta charset="UTF-8">
+    <title>Comentário</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/style-login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        @{
+             Html.RenderPartial("_HeaderNavBar");
+        }
+<section class="container">
+    <h2>Comentário</h2>
+    <form action="Comentario/Comentar" class="sac2" method="POST">
+        <div>
+           <textarea name="texto" id="msg"></textarea>
+            <input type="submit" value="Enviar sua mensagem" id="botao">
+       </div>
+
+    </form>
+</section>
+</header>
+
+</body>

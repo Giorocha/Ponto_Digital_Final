@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Ponto_Digital.Interfaces;
+
 using Ponto_Digital.Models;
 using Ponto_Digital.Repositorios;
 

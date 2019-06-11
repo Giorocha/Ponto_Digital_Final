@@ -61,7 +61,7 @@ using Ponto_Digital.Models;
 #line default
 #line hidden
             BeginContext(32, 127, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3aae4b8ba6d94ef68fcedd7256265980", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a5da3d7400d6469dad924e01d89e316c", async() => {
                 BeginContext(38, 114, true);
                 WriteLiteral("\r\n    <meta charset=\"UTF-8\">\r\n    <link rel=\"stylesheet\" href=\"css/style.css\">\r\n    <title>Ponto Digital</title>\r\n");
                 EndContext();
@@ -103,7 +103,7 @@ using Ponto_Digital.Models;
 ");
             EndContext();
             BeginContext(533, 8621, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0eb7e283b64f40eaaea1649a3e1a77d6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a06fae0499a643e58716e15049315a47", async() => {
                 BeginContext(539, 7057, true);
                 WriteLiteral(@"
 <section id=""principal"">
@@ -345,7 +345,7 @@ using Ponto_Digital.Models;
             ");
                 EndContext();
                 BeginContext(7596, 985, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0323bf3f28664439b67ff42142d4e86a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bc5bfef01a16452bafe71cec5d1e19ed", async() => {
                     BeginContext(7629, 945, true);
                     WriteLiteral(@"
                 <div>
