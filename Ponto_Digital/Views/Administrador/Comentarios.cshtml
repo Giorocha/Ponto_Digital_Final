@@ -1,0 +1,46 @@
+@{
+    Layout = "_Layout";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comentários</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/style-login.css" rel="stylesheet" type="text/css">
+</head>
+
+<nav class="nav-bar">
+     <div class="nav-container">
+         <ul class="nav-list " id="nav">
+             <li><a href='@Url.Action("Index","Administrador")'>Cadastros</a></li>
+             <li><a href='@Url.Action("Comentarios","Administrador")'>Comentários</a></li>
+            
+            <li><a id="bt_logout" asp-controller="Cliente" asp-action="Logout">Logout</a></li>
+            
+             
+        </ul>
+    </div>
+</nav>
+
+ <table class="table">
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Comentario</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewData["Comentario"] as List<Comentario>)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</table> 
+

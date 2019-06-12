@@ -16,9 +16,23 @@ namespace Ponto_Digital.Repositorios {
 
             StreamWriter sw = new StreamWriter (PATH, true);
 
-            sw.WriteLine ($"{usuario.Id};{usuario.NomeCompleto};{usuario.Email};{usuario.DataNascimento};{usuario.Senha}");
+            sw.WriteLine ($"{usuario.Id};{usuario.NomeCompleto};{usuario.Email};{usuario.Senha};{usuario.DataNascimento}");
             sw.Close ();
         }
+
+        public Usuario BuscarPorEmail (string email){
+            List<Usuario> usuariosCadastrados = ListarUsuarios();
+
+            foreach (Usuario usuario in usuariosCadastrados)
+            {
+                if (usuario.Email == email)
+                {
+                    return usuario;
+                }
+            }
+            return null;
+        }
+
 
         public List<Usuario> ListarUsuarios(){
             string[] cadastros = File.ReadAllLines(PATH);
@@ -37,8 +51,8 @@ namespace Ponto_Digital.Repositorios {
                     }
                     usuario.NomeCompleto = dados[1];
                     usuario.Email = dados[2];
-                    usuario.DataNascimento = DateTime.Parse(dados[3]);
-                    usuario.Senha = dados[4];
+                    usuario.Senha = dados[3];
+                    usuario.DataNascimento = DateTime.Parse(dados[4]);
 
                     listaDeUsuarios.Add(usuario);
                     continue;

@@ -12,7 +12,7 @@ namespace Ponto_Digital.Models
 
         public int ID{get;set;}
 
-        public bool Status{get;set;}
+        public string Status{get;set;}
 
         
     }

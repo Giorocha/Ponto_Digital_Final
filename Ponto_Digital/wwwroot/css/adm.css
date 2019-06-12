@@ -1,0 +1,15 @@
+.nav-menu {
+    display: none;
+  }
+  nav.nav-bar ul {
+    list-style-type: none;
+  }
+  .nav-list {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    background-color: #000;
+    justify-content: space-between;
+  
+  }

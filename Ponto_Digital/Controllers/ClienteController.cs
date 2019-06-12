@@ -10,9 +10,12 @@ namespace Ponto_Digital.Controllers
     public class ClienteController : Controller 
     {
         UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio();
+        AdministradorRepositorio admRepositorio = new AdministradorRepositorio();
         
         private const string SESSION_EMAIL = "_EMAIL";
         private const string SESSION_CLIENTE = "_CLIENTE";
+        
+        private const string SESSION_ADM = "_ADM";
         
         [HttpGet]
         public IActionResult Login(){
@@ -27,6 +30,18 @@ namespace Ponto_Digital.Controllers
             var senha = form["senha"];
 
             var cliente = usuarioRepositorio.ListarUsuarios();
+            var adm = admRepositorio.Dados();
+
+            foreach (var item in adm)
+            {
+                if (item!= null && item.EmailAdm.Equals(usuario) && item.SenhaAdm.Equals(senha) )
+                {
+                    HttpContext.Session.SetString(SESSION_ADM, usuario);
+                    HttpContext.Session.SetString(SESSION_CLIENTE, item.NomeAdm);
+
+                    return RedirectToAction("Index", "Administrador");
+                }
+            }
 
             foreach (var item in cliente)
             {
@@ -47,5 +62,7 @@ namespace Ponto_Digital.Controllers
 
             return RedirectToAction("Index", "Home");
         }
+
+        
     }
 }

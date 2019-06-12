@@ -27,3 +27,6 @@ C:\Users\43706052881\Documents\Projeto_Final\Ponto_Digital_Final\Ponto_Digital\o
 C:\Users\43706052881\Documents\Projeto_Final\Ponto_Digital_Final\Ponto_Digital\obj\Debug\netcoreapp2.1\Ponto_Digital.dll
 C:\Users\43706052881\Documents\Projeto_Final\Ponto_Digital_Final\Ponto_Digital\obj\Debug\netcoreapp2.1\Ponto_Digital.pdb
 C:\Users\43706052881\Documents\Projeto_Final\Ponto_Digital_Final\Ponto_Digital\obj\Debug\netcoreapp2.1\Ponto_Digital.csproj.CopyComplete
+C:\Users\43706052881\Documents\Projeto_Final\Ponto_Digital_Final\Ponto_Digital\obj\Debug\netcoreapp2.1\Razor\Views\Administrador\Index.g.cshtml.cs
+C:\Users\43706052881\Documents\Projeto_Final\Ponto_Digital_Final\Ponto_Digital\obj\Debug\netcoreapp2.1\Razor\Views\Administrador\Comentarios.g.cshtml.cs
+C:\Users\43706052881\Documents\Projeto_Final\Ponto_Digital_Final\Ponto_Digital\obj\Debug\netcoreapp2.1\Razor\Views\Administrador\Cadastros.g.cshtml.cs

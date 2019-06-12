@@ -13,23 +13,27 @@ namespace Ponto_Digital.Controllers
         private const string SESSION_CLIENTE = "_CLIENTE";
 
         ComentarioRepositorio comentarioRepositorio = new ComentarioRepositorio();
-        Usuario usuario = new Usuario();
-
+        UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio();
+        
         public IActionResult Index(){
             return View();
         }
 
         public IActionResult Comentar(IFormCollection form){
+
             Comentario comentario = new Comentario();
+            // Usuario usuario = usuarioRepositorio.BuscarPorEmail(HttpContext.Session.GetString(SESSION_EMAIL));
             comentario.usuario = new Usuario();
-            comentario.usuario.NomeCompleto = SESSION_EMAIL;
+            
+            comentario.usuario.NomeCompleto = HttpContext.Session.GetString(SESSION_CLIENTE);
             comentario.Texto = form["texto"];
-  
 
             comentarioRepositorio.CadastrarComentario(comentario);
             ViewData["Action"] = "Comentario";
             return RedirectToAction("Index", "Home");
         }
+
+        
 
 
 
