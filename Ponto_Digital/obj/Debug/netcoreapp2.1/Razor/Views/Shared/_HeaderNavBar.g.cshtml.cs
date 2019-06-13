@@ -129,7 +129,7 @@ WriteAttributeValue("", 559, Url.Action("Index","Home"), 559, 27, false);
             WriteLiteral("                 <li>");
             EndContext();
             BeginContext(731, 70, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f335ec3d4114442b3749eb32243fa52", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8acb42d9e4bf4975b1d8b99926f2d30e", async() => {
                 BeginContext(792, 5, true);
                 WriteLiteral("Login");
                 EndContext();
@@ -172,7 +172,7 @@ WriteAttributeValue("", 858, Url.Action("Index","Comentario"), 858, 33, false);
             WriteLiteral("> Comentários</a></li>\r\n                 <li>");
             EndContext();
             BeginContext(937, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a1345357eaf497bb2c2615bc54e10e5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "15a4670c1197427a8bc43fa391a7dc87", async() => {
                 BeginContext(1000, 6, true);
                 WriteLiteral("Logout");
                 EndContext();

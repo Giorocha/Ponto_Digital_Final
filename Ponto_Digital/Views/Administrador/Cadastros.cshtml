@@ -1,3 +1,56 @@
+@model Ponto_Digital.ViewModel.ComentariosViewModel
 @{
     Layout = "_Layout";
 }
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comentários</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/style-login.css" rel="stylesheet" type="text/css">
+</head>
+
+<nav class="nav-bar">
+     <div class="nav-container">
+         <ul class="nav-list " id="nav">
+             <li><a href='@Url.Action("Index","Administrador")'>Principal</a></li>
+             <li><a href='@Url.Action("Cadastros","Administrador")'>Cadastros</a></li>
+             <li><a href='@Url.Action("Comentarios","Administrador")'> Comentários</a></li>
+            
+            <li><a id="bt_logout" asp-controller="Cliente" asp-action="Logout">Logout</a></li>
+            
+             
+        </ul>
+    </div>
+</nav>
+<main>
+
+ <table class="table">
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Data Nascimento</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Usuarios)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.NomeCompleto</td>
+                    <td>@item.Email</td>
+                    <td>@item.Senha</td>
+                    <td>@item.DataNascimento</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</table> 
+</main>
+
+

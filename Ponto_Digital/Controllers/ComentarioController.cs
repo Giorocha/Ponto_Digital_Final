@@ -9,6 +9,8 @@ namespace Ponto_Digital.Controllers
 {
     public class ComentarioController : Controller
     {
+         
+        ComentarioRepositorio comentario = new ComentarioRepositorio();
         private const string SESSION_EMAIL = "_EMAIL";
         private const string SESSION_CLIENTE = "_CLIENTE";
 
@@ -22,16 +24,17 @@ namespace Ponto_Digital.Controllers
         public IActionResult Comentar(IFormCollection form){
 
             Comentario comentario = new Comentario();
-            // Usuario usuario = usuarioRepositorio.BuscarPorEmail(HttpContext.Session.GetString(SESSION_EMAIL));
+            
             comentario.usuario = new Usuario();
             
             comentario.usuario.NomeCompleto = HttpContext.Session.GetString(SESSION_CLIENTE);
             comentario.Texto = form["texto"];
 
             comentarioRepositorio.CadastrarComentario(comentario);
-            ViewData["Action"] = "Comentario";
             return RedirectToAction("Index", "Home");
         }
+
+    
 
         
 

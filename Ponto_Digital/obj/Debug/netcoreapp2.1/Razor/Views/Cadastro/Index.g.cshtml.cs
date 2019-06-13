@@ -62,7 +62,7 @@ using Ponto_Digital.Models;
 #line default
 #line hidden
             BeginContext(32, 210, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "848517257971463cb01eb705da9b7533", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "541325aa02584995913342db4ccca2d8", async() => {
                 BeginContext(38, 197, true);
                 WriteLiteral("\r\n    <meta charset=\"UTF-8\">\r\n    <title>Cadastro</title>\r\n    <link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\">\r\n    <link href=\"css/style-login.css\" rel=\"stylesheet\" type=\"text/css\">\r\n");
                 EndContext();
@@ -82,7 +82,7 @@ using Ponto_Digital.Models;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(246, 752, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f4bf6a83cc794c509f35eeff7e7018ed", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "21d9abc9f57e4103894faed8fd1f36c7", async() => {
                 BeginContext(252, 16, true);
                 WriteLiteral("\r\n    <Header>\r\n");
                 EndContext();
@@ -97,7 +97,7 @@ using Ponto_Digital.Models;
                 WriteLiteral("        <section class=\"container\">\r\n            <h2>Cadastro</h2>\r\n                ");
                 EndContext();
                 BeginContext(417, 532, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ae41775adbff4bf3b0a6feca36fd72c0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1af580e5cd08486eaeeafedc2b71a739", async() => {
                     BeginContext(485, 457, true);
                     WriteLiteral(@"
                <input type=""text"" name=""nome"" placeholder=""Nome completo"" id=""nome"" required>

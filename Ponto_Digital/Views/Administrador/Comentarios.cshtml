@@ -1,3 +1,4 @@
+@model Ponto_Digital.ViewModel.ComentariosViewModel
 @{
     Layout = "_Layout";
 }
@@ -9,11 +10,13 @@
     <link href="/css/style-login.css" rel="stylesheet" type="text/css">
 </head>
 
+
 <nav class="nav-bar">
      <div class="nav-container">
          <ul class="nav-list " id="nav">
-             <li><a href='@Url.Action("Index","Administrador")'>Cadastros</a></li>
-             <li><a href='@Url.Action("Comentarios","Administrador")'>Comentários</a></li>
+             <li><a href='@Url.Action("Index","Administrador")'>Principal</a></li>
+             <li><a href='@Url.Action("Cadastros","Administrador")'>Cadastros</a></li>
+             <li><a href='@Url.Action("Comentarios","Administrador")'> Comentários</a></li>
             
             <li><a id="bt_logout" asp-controller="Cliente" asp-action="Logout">Logout</a></li>
             
@@ -22,25 +25,34 @@
     </div>
 </nav>
 
+<main>
+
  <table class="table">
     <table class="table table-striped">
         <thead class="thead-dark">
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
-                <th>Email</th>
                 <th>Comentario</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in ViewData["Comentario"] as List<Comentario>)
+            @foreach (var item in Model.Comentarios)
             {
                 <tr>
                     <td>@item.ID</td>
+                    <td>@item.usuario.NomeCompleto</td>
+                    <td>@item.Texto</td>
+                    <td>@item.DataCriacao</td>
+                    <td>
+                        <td><button><a href="/Administrador/AprovarComentario?id=@item.ID">Aprovar</a></button></td>
+                        <td><button><a href="/Administrador/RejeitarComentario?id=@item.ID">Rejeitar</a></button></td>
+                    </td>
                 </tr>
             }
         </tbody>
 
     </table>
 </table> 
+</main>
 
