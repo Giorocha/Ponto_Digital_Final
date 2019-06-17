@@ -62,7 +62,7 @@ using Ponto_Digital.Models;
 #line default
 #line hidden
             BeginContext(32, 214, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f9631e357d941839f6c2e4e44de81d9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f1fea80cfbe4b6ab66c3f0105c1f653", async() => {
                 BeginContext(38, 201, true);
                 WriteLiteral("\r\n    <meta charset=\"UTF-8\">\r\n    <title>Comentário</title>\r\n    <link href=\"/css/style.css\" rel=\"stylesheet\" type=\"text/css\">\r\n    <link href=\"/css/style-login.css\" rel=\"stylesheet\" type=\"text/css\">\r\n");
                 EndContext();
@@ -82,7 +82,7 @@ using Ponto_Digital.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(248, 425, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7cdeb560638d4141a4053ef7bfbedd74", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d0d1680bc434f619926642048897360", async() => {
                 BeginContext(254, 16, true);
                 WriteLiteral("\r\n    <header>\r\n");
                 EndContext();
@@ -97,7 +97,7 @@ using Ponto_Digital.Models;
                 WriteLiteral("<section class=\"container\">\r\n    <h2>Comentário</h2>\r\n    ");
                 EndContext();
                 BeginContext(402, 237, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3a6f0d19775349e2afa2478290402dac", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "369c628ce08d4603888c76c58bf43354", async() => {
                     BeginContext(464, 168, true);
                     WriteLiteral("\r\n        <div>\r\n           <textarea name=\"texto\" id=\"msg\"></textarea>\r\n            <input type=\"submit\" value=\"Enviar sua mensagem\" id=\"botao\">\r\n       </div>\r\n\r\n    ");
                     EndContext();

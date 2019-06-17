@@ -254,15 +254,36 @@
         </div>
         <section class="img">
 
-                <p>Depoimentos:</p>
                 
-             
-                
-            <div class="ima">
+                <table class="table">
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nome</th>
+                <th>Comentario</th>
+                <th>Data de Criação</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Comentarios)
+            {
+                <tr>
+                    <td>@item.usuario.NomeCompleto</td>
+                    <td>@item.Texto</td>
+                    <td>@item.DataCriacao</td>
 
-                <img class="ima2" src="imagens/depoi.jpg" alt="comentarios da apple">]
-                <img class="ima3" src="imagens/depoimento2.jpg" alt="comentarios da microsoft">'  \Z'
-            </div>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</table> 
+
+
+
+
+
+                </div>
         </section>
     </section>
     <hr>

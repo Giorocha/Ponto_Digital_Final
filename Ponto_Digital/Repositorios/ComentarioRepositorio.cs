@@ -32,8 +32,12 @@ namespace Ponto_Digital.Repositorios {
                     string[] dados = item.Split (";");
                     System.Console.WriteLine (dados.Length);
                     var comentario = new Comentario ();
+                    try{
 
                     comentario.ID = int.Parse (dados[0]);
+                    } catch(FormatException fe){
+                        System.Console.WriteLine(fe.StackTrace);
+                    }
                     comentario.usuario = new Usuario ();
                     comentario.usuario.NomeCompleto = dados[1];
                     comentario.Texto = dados[2];
@@ -51,10 +55,10 @@ namespace Ponto_Digital.Repositorios {
             string[] linhas = File.ReadAllLines(PATH);
             for (int i = 0; i < linhas.Length; i++)
             {
-                string[] dadosDaLinha = linhas[i].Split(";");
-                if (id.ToString () == dadosDaLinha[0])
+                string[] dados = linhas[i].Split(";");
+                if (id.ToString () == dados[0])
                 {
-                    linhas[i] = ($"{dadosDaLinha[0]};{dadosDaLinha[1]};{dadosDaLinha[2]};{dadosDaLinha[3]};{true}");
+                    linhas[i] = ($"{dados[0]};{dados[1]};{dados[2]};{dados[3]};{true}");
                     break;
                 }
             }
@@ -67,9 +71,9 @@ namespace Ponto_Digital.Repositorios {
 
             for (int i = 0; i < linhas.Length; i++)
             {
-                string[] dadosDaLinha = linhas[i].Split(";");
+                string[] dados = linhas[i].Split(";");
 
-                if(id.ToString() == dadosDaLinha[0])
+                if(id.ToString() == dados[0])
                 {
                     linhas[i] = "";
                     break;

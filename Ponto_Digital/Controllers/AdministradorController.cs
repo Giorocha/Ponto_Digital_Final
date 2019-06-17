@@ -51,12 +51,8 @@ namespace Ponto_Digital.Controllers
 
             [HttpGet]
         public IActionResult AprovarComentario(int id){
-            comentario.AprovarComentario(id);
-
-            var listaRecuperadaUsuario = usuariorepositorio.ListarUsuarios();
-            var listaRecuperadaComentario = comentariorepositorio.ListaDeComentarios();
-            var ComentariosViewModel = new ComentariosViewModel(listaRecuperadaComentario, listaRecuperadaUsuario);
-            return View("Comentarios", ComentariosViewModel);
+            comentariorepositorio.AprovarComentario(id);
+            return RedirectToAction("Comentarios") ;
         }
 
         [HttpGet]

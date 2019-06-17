@@ -66,7 +66,7 @@ using Ponto_Digital.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(35, 215, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7cd0aeef46bb4556961f692c104df015", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ebe7596cab414357a4716e2bc9a36969", async() => {
                 BeginContext(41, 202, true);
                 WriteLiteral("\r\n    <meta charset=\"UTF-8\">\r\n    <title>Comentários</title>\r\n    <link href=\"/css/style.css\" rel=\"stylesheet\" type=\"text/css\">\r\n    <link href=\"/css/style-login.css\" rel=\"stylesheet\" type=\"text/css\">\r\n");
                 EndContext();
@@ -116,7 +116,7 @@ WriteAttributeValue("", 551, Url.Action("Comentarios","Administrador"), 551, 42,
             WriteLiteral("> Comentários</a></li>\r\n            \r\n            <li>");
             EndContext();
             BeginContext(648, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "72951d0826fb45bd8afd87939822e3b6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "df540ea658d840b2b42899ef0e357a97", async() => {
                 BeginContext(711, 6, true);
                 WriteLiteral("Logout");
                 EndContext();

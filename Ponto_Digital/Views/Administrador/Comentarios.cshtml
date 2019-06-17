@@ -1,5 +1,6 @@
 @model Ponto_Digital.ViewModel.ComentariosViewModel
 @{
+    var lista = ViewData["comentarios"] as List<Comentario>;
     Layout = "_Layout";
 }
 
@@ -45,8 +46,8 @@
                     <td>@item.Texto</td>
                     <td>@item.DataCriacao</td>
                     <td>
-                        <td><button><a href="/Administrador/AprovarComentario?id=@item.ID">Aprovar</a></button></td>
-                        <td><button><a href="/Administrador/RejeitarComentario?id=@item.ID">Rejeitar</a></button></td>
+                        <td><button><a href='@Url.Action("AprovarComentario", "Administrador")?id=@item.ID'>Aprovar</a></button></td>
+                        <td><button><a href='@Url.Action("AprovarComentario", "Administrador")?id=@item.ID'>Rejeitar</a></button></td>
                     </td>
                 </tr>
             }
